@@ -651,7 +651,6 @@ func (p *Plugin) getYourPrs(c *UserContext, w http.ResponseWriter, r *http.Reque
 
 	githubClient := p.githubConnect(*c.GHInfo.Token)
 	username := c.GHInfo.GitHubUsername
-
 	query := getYourPrsSearchQuery(username, config.GitHubOrg)
 	result, _, err := githubClient.Search.Issues(c.Ctx, query, &github.SearchOptions{})
 	if err != nil {
@@ -907,12 +906,12 @@ func (p *Plugin) createIssueComment(c *UserContext, w http.ResponseWriter, r *ht
 
 func (p *Plugin) getYourAssignments(c *UserContext, w http.ResponseWriter, r *http.Request) {
 	config := p.getConfiguration()
-
+	p.API.LogWarn("I m here ", "token ", *c.GHInfo)
 	githubClient := p.githubConnect(*c.GHInfo.Token)
 
 	username := c.GHInfo.GitHubUsername
 	query := getYourAssigneeSearchQuery(username, config.GitHubOrg)
-	result, _, err := githubClient.Search.Issues(c.Ctx, query, &github.SearchOptions{})
+	result, _, err := githubClient.Search.Issues(c.Ctx, query, &`github`.SearchOptions{})
 	if err != nil {
 		p.API.LogWarn("Failed to search for assignments", "query", query, "error", err.Error())
 		return
