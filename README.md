@@ -168,6 +168,7 @@ Suppose you want to send notifications to a Mattermost channel when `Severity/Cr
 /github subscriptions add mattermost/mattermost-plugin-github issues,label:"Severity/Critical"
 ```
 
+
 ### How do I share feedback on this plugin?
 
 Feel free to create a GitHub issue or [join the GitHub Plugin channel on our community Mattermost instance](https://community-release.mattermost.com/core/channels/github-plugin) to discuss.
