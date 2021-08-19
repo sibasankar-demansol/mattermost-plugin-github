@@ -55,6 +55,9 @@ This guide assumes:
 - You're a Mattermost System Admin.
 - You're running Mattermost v5.12 or higher.
 
+
+
+
 ## Configuration
 
 GitHub plugin configuration starts by registering an OAuth app in GitHub and ends in Mattermost. 
