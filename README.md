@@ -150,6 +150,10 @@ When you’ve tested the plugin and confirmed it’s working, notify your team s
   - The following flags are supported:
      - `--exclude-org-member`: events triggered by organization members will not be delivered. It will be locked to the organization provided in the plugin configuration and it will only work for users whose membership is public. Note that organization members and collaborators are not the same.
    
+   
+   
+   
+   
 * __Get to do items__ - Use `/github todo` to get an ephemeral message with items to do in GitHub, including a list of unread messages and pull requests awaiting your review.
 * __Update settings__ - Use `/github settings` to update your settings for notifications and daily reminders.
 * __And more!__ - Run `/github help` to see what else the slash command can do.
