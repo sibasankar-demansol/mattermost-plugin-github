@@ -88,13 +88,24 @@ As a system admin, you must create a webhook for each organization you want to r
 2. Hit **Save** to save the secret.
 3. Go to the **Settings** page of your GitHub organization you want to send notifications from, then select **Webhooks** in the sidebar.
 4. Click **Add Webhook**.
-5. Set the following values:
+
+
+
+
+
+
+
+
+
+
+
+6. Set the following values:
    - **Payload URL:** `https://your-mattermost-url.com/plugins/github/webhook`, replacing `https://your-mattermost-url.com` with your Mattermost URL.
    - **Content Type:** `application/json`
    - **Secret:** the webhook secret you copied previously.
-6. Select **Let me select individual events** for "Which events would you like to trigger this webhook?".
-7. Select the following events: `Branch or Tag creation`, `Branch or Tag deletion`, `Issue comments`, `Issues`, `Pull requests`, `Pull request review`, `Pull request review comments`, `Pushes`.
-7. Hit **Add Webhook** to save it.
+7. Select **Let me select individual events** for "Which events would you like to trigger this webhook?".
+8. Select the following events: `Branch or Tag creation`, `Branch or Tag deletion`, `Issue comments`, `Issues`, `Pull requests`, `Pull request review`, `Pull request review comments`, `Pushes`.
+9. Hit **Add Webhook** to save it.
 
 If you have multiple organizations, repeat the process starting from step 3 to create a webhook for each organization.
 
