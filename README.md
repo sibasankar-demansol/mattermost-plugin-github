@@ -27,7 +27,15 @@ A GitHub plugin for Mattermost. Supports GitHub SaaS and Enterprise versions.
 
 ## Audience
 
-This guide is intended for Mattermost System Admins setting up the GitHub plugin, Mattermost users who want information about the plugin functionality, and Mattermost users who want to connect their GitHub account to Mattermost. For more information about contributing to this plugin, visit the [Development section](#development).
+This guide is intended for Mattermost System Admins sett
+
+
+
+
+
+
+
+ing up the GitHub plugin, Mattermost users who want information about the plugin functionality, and Mattermost users who want to connect their GitHub account to Mattermost. For more information about contributing to this plugin, visit the [Development section](#development).
 
 ## License
 
