@@ -104,6 +104,13 @@ As a System Admin, if you have an existing Mattermost user account with the name
 
 To prevent this, either:
 
+
+
+
+
+
+
+
 - Convert the `github` user to a bot account by running `mattermost user convert github --bot` in the CLI.
 
 or
